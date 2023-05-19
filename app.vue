@@ -19,8 +19,4 @@ useHead({
 html, body , #__nuxt{
   --uno: min-h-screen m-0 p-0;
 }
-
-html {
-  --uno: bg-antique text-brick;
-}
 </style>

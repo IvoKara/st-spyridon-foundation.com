@@ -10,8 +10,9 @@ import {
 } from 'unocss'
 
 export default defineConfig({
-  shortcuts: [
-
+  rules: [
+    ['font-cyrillic', { 'font-family': 'Monomachus' }],
+    ['font-alegreya', { 'font-family': 'Alegreya' }],
   ],
   presets: [
     presetUno(),

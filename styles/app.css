@@ -1,0 +1,15 @@
+html {
+  --uno: bg-antique text-brick;
+}
+
+@font-face {
+  font-family: 'Alegreya';
+  font-display: swap;
+  src: url('/fonts/alegreya.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Monomachus';
+  font-display: swap;
+  src: url('/fonts/monomachus.ttf') format('truetype');
+}
