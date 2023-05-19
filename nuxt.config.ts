@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@nuxtjs/color-mode',
     '@vite-pwa/nuxt',
-    '@nuxtjs/fontaine',
+    // '@nuxtjs/fontaine',
   ],
 
   experimental: {
