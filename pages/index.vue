@@ -1,5 +1,5 @@
 <template>
-  <h1 text="4xl" font-cyrillic>
+  <h1 text="3xl md:4xl" font-cyrillic>
     Фондация <br lg:hidden>
     "Св. Спиридон <br md:hidden> Тримитунтски Чудотворец"
   </h1>
