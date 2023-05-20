@@ -10,7 +10,8 @@
 
 A website for the __*"St. Spyridon, Wonderworker of Trimitunt" Foundation*__,
 
-> Recorded in the commercial register of Bulgaria as __*Фондация "Св. Спиридон Тримитунтски Чудотворец"*__
+> Recorded in the commercial register of Bulgaria as
+> __*Фондация "Св. Спиридон Тримитунтски Чудотворец"*__
  
 whose aim is the construction of Оrthodox church 
 named after the saint in "Studentski grad" in Sofia, Bulgaria, 
