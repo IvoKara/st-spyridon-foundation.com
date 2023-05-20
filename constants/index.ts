@@ -11,3 +11,7 @@ export const appDescription = '"Св. Спиридон Тримитунтски 
 export const bank = 'УниКредит Булбанк'
 export const iban = 'BG53UNCR70001524269241'
 export const bic = 'UNCRBGSF'
+
+export const blessing = 'Божието благословение и Божията благодат, '
++ 'любовта на Бога Отца и общуването със Светия Дух '
++ 'да бъдат със всички вас!'
