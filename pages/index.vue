@@ -1,6 +1,10 @@
+<script setup lang="ts">
+import { foundationNameBg } from '~/constants'
+</script>
+
 <template>
   <h1 text-3xl font-cyrillic md:text-4xl>
-    Фондация "Св. Спиридон Тримитутски Чудотворец"
+    {{ foundationNameBg }}
   </h1>
   <img
     src="/st_spyridon_ikon.jpg"
