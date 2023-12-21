@@ -8,6 +8,7 @@ import {
   transformerDirectives,
   transformerVariantGroup,
 } from 'unocss'
+import extractorMdc from '@unocss/extractor-mdc'
 
 export default defineConfig({
   rules: [
@@ -32,6 +33,9 @@ export default defineConfig({
   transformers: [
     transformerDirectives(),
     transformerVariantGroup(),
+  ],
+  extractors: [
+    extractorMdc(),
   ],
   theme: {
     colors: {

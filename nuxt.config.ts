@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     '@vite-pwa/nuxt',
     // '@nuxtjs/fontaine',
+    '@nuxt/content',
   ],
 
   experimental: {
