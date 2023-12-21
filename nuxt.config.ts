@@ -1,4 +1,3 @@
-import { pwa } from './config/pwa'
 import { content } from './config/content'
 import { appDescription } from './constants/index'
 
@@ -38,11 +37,11 @@ export default defineNuxtConfig({
         target: 'esnext',
       },
     },
-    prerender: {
-      crawlLinks: false,
-      routes: ['/'],
-      ignore: ['/hi'],
-    },
+    // prerender: {
+    //   crawlLinks: false,
+    //   routes: ['/'],
+    //   ignore: ['/hi'],
+    // },
   },
 
   app: {
@@ -61,7 +60,7 @@ export default defineNuxtConfig({
     },
   },
 
-  pwa,
+  // pwa,
 
   devtools: {
     enabled: true,

@@ -4,10 +4,11 @@ import { bank, bic, blessing, iban } from '~/constants'
 
 <template>
   <div flex flex-col items-center font-cyrillic>
-    <h1 text="3xl md:4xl">
+    <h1 text="3xl md:4xl" font-bold>
       Фондация <br>
       "Св. Спиридон <br md:hidden> Тримитунтски Чудотворец"
     </h1>
+
     <h3
       mt-4 max-w-50ch
       text-orange-9 opacity-82
@@ -16,6 +17,14 @@ import { bank, bic, blessing, iban } from '~/constants'
       {{ blessing }}<br>
       Aмин!
     </h3>
+
+    <p mt-5 font-alegreya>
+      <NuxtLink to="/saint/slipper" flex items-center gap-2 italic underline>
+        Научи повече за пантофката на св. Спиридон
+        <i class="i-carbon:arrow-right" inline-block />
+      </NuxtLink>
+    </p>
+
     <img
       src="/st_spyridon_ikon.jpg"
       mt-10 max-w-120 rounded-img
