@@ -1,4 +1,5 @@
 import { pwa } from './config/pwa'
+import { content } from './config/content'
 import { appDescription } from './constants/index'
 
 export default defineNuxtConfig({
@@ -11,6 +12,8 @@ export default defineNuxtConfig({
     // '@nuxtjs/fontaine',
     '@nuxt/content',
   ],
+
+  content,
 
   experimental: {
     // when using generate, payload js assets included in sw precache manifest
