@@ -18,8 +18,7 @@ import { bank, bic, blessing, iban } from '~/constants'
     </h3>
     <img
       src="/st_spyridon_ikon.jpg"
-      mt-10 max-w-120 w-full rounded-4
-      drop-shadow="lg color-black/25"
+      mt-10 max-w-120 rounded-img
       alt="Икона на св. Спиридон"
     >
   </div>

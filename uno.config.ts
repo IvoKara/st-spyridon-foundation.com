@@ -11,9 +11,8 @@ import {
 import extractorMdc from '@unocss/extractor-mdc'
 
 export default defineConfig({
-  rules: [
-    ['font-cyrillic', { 'font-family': 'Monomachus' }],
-    ['font-alegreya', { 'font-family': 'Alegreya' }],
+  shortcuts: [
+    { 'rounded-img': 'max-w-120 mx-auto w-full rounded-4 drop-shadow-(lg color-black/25)' },
   ],
   presets: [
     presetUno(),
@@ -23,11 +22,6 @@ export default defineConfig({
     }),
     presetTypography(),
     presetWebFonts({
-      fonts: {
-        sans: 'DM Sans',
-        serif: 'DM Serif Display',
-        mono: 'DM Mono',
-      },
     }),
   ],
   transformers: [
@@ -42,5 +36,12 @@ export default defineConfig({
       antique: '#ffe8cc',
       brick: '#3e2723',
     },
+    fontFamily: {
+      cyrillic: 'Monomachus',
+      alegreya: 'Alegreya',
+    },
   },
+  safelist: [
+    'mt-12',
+  ],
 })
