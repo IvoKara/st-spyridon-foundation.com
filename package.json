@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "private": true,
   "packageManager": "pnpm@8.5.1",
   "scripts": {
@@ -26,6 +27,8 @@
     "@vueuse/nuxt": "^10.7.0",
     "consola": "^3.2.3",
     "eslint": "^8.56.0",
+    "eslint-plugin-format": "^0.1.0",
+    "eslint-ts-patch": "8.55.0-1",
     "nuxt": "^3.8.2",
     "pinia": "^2.1.7",
     "typescript": "^5.3.3",

@@ -1,8 +1,8 @@
 {
   "editor.accessibilitySupport": "off",
   "editor.find.addExtraSpaceOnTop": false,
-  "editor.fontFamily": "Input Mono, Fira Code, monospace",
-  "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss06', 'zero'",
+  // "editor.fontFamily": "Input Mono, Fira Code, monospace",
+  // "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss06', 'zero'",
   "editor.fontSize": 13.7,
   "editor.glyphMargin": true,
   "editor.guides.bracketPairs": "active",
@@ -13,15 +13,14 @@
   "editor.suggestSelection": "first",
   "editor.tabSize": 2,
   "editor.unicodeHighlight.invisibleCharacters": false,
-  "editor.codeActionsOnSave": {
-    "source.fixAll": false,
-    "source.fixAll.eslint": true, // this allows ESLint to auto fix on save
-    "source.organizeImports": false
-  },
+  // "editor.codeActionsOnSave": {
+  //   "source.fixAll": "never",
+  //   "source.fixAll.eslint": "explicit",
+  //   "source.organizeImports": "never"
+  // },
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "window.autoDetectColorScheme": true,
-  "workbench.activityBar.visible": true,
   "workbench.colorTheme": "Default Dark+",
   "workbench.editor.closeOnFileDelete": true,
   "workbench.editor.highlightModifiedTabs": true,
@@ -71,7 +70,6 @@
     "**/tmp": true,
     "**/yarn.lock": true
   },
-
   // Extension configs
   "emmet.showSuggestionsAsSnippets": true,
   "emmet.triggerExpansionOnTab": false,
@@ -91,19 +89,19 @@
   "eslint.codeAction.showDocumentation": {
     "enable": true
   },
-  "eslint.quiet": true,
-  "eslint.validate": [
-    "javascript",
-    "typescript",
-    "javascriptreact",
-    "typescriptreact",
-    "vue",
-    "html",
-    "markdown",
-    "json",
-    "jsonc",
-    "json5"
-  ],
+  // "eslint.quiet": true,
+  // "eslint.validate": [
+  //   "javascript",
+  //   "typescript",
+  //   "javascriptreact",
+  //   "typescriptreact",
+  //   "vue",
+  //   "html",
+  //   "markdown",
+  //   "json",
+  //   "jsonc",
+  //   "json5"
+  // ],
   "cSpell.allowCompoundWords": true,
   "cSpell.language": "en,en-US",
   "css.lint.hexColorLength": "ignore",
@@ -168,11 +166,10 @@
   "volar.completion.preferredTagNameCase": "pascal",
   "volar.showWelcomePage": false,
   "volar.takeOverMode.enabled": "auto",
-  "prettier.enable": false, // I only use Prettier for manually formatting
+  // "prettier.enable": false, // I only use Prettier for manually formatting
   "prettier.printWidth": 200,
   "prettier.semi": false,
   "prettier.singleQuote": true,
-
   // File Nesting
   // this might not be up to date with the repo, please check yourself
   // updated 2022-03-10 06:10
@@ -242,13 +239,53 @@
     "sfserv",
     "sfsrv"
   ],
-  "svg.preview.background": "transparent"
-}
+  "svg.preview.background": "transparent",
+  "workbench.editor.tabActionLocation": "right",
+  // New
+  "files.associations": {
+    "*.css": "postcss"
+  },
+  // Enable the ESlint flat config support
+  "eslint.experimental.useFlatConfig": true,
+  "eslint.quiet": true,
+  // Disable the default formatter, use eslint instead
+  "prettier.enable": false,
+  "editor.formatOnSave": false,
+  // Auto fix
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "never"
+  },
+  // Silent the stylistic rules in you IDE, but still auto fix them
+  "eslint.rules.customizations": [
+    { "rule": "style/*", "severity": "off" },
+    { "rule": "*-indent", "severity": "off" },
+    { "rule": "*-spacing", "severity": "off" },
+    { "rule": "*-spaces", "severity": "off" },
+    { "rule": "*-order", "severity": "off" },
+    { "rule": "*-dangle", "severity": "off" },
+    { "rule": "*-newline", "severity": "off" },
+    { "rule": "*quotes", "severity": "off" },
+    { "rule": "*semi", "severity": "off" }
+  ],
 
-// {
-//     "nuxt.isNuxtApp": false,
-//     "prettier.enable": false,
-//     "editor.codeActionsOnSave": {
-//         "source.fixAll.eslint": true
-//     }
-// }
+  // Enable eslint for all supported languages
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "html",
+    "markdown",
+    "json",
+    "jsonc",
+    "yaml"
+  ],
+
+  // other
+  "editor.linkedEditing": true,
+  "html.autoClosingTags": true,
+  "javascript.autoClosingTags": true,
+  "typescript.autoClosingTags": true
+}
