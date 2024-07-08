@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900">
   <title>"St. Spyridon, Wonderworker of Trimitunt" Foundation's logo</title>
   <g id="elipse">
-    <circle fill="white" cx="450.06" cy="450" r="449.94" />
+    <circle fill="#ffe8cc" cx="450.06" cy="450" r="449.94" />
   </g>
-  <g id="pwa" fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="34px"
+  <g id="pwa" fill="none" stroke="#3e2723" stroke-linecap="round" stroke-linejoin="round" stroke-width="34px"
     stroke-miterlimit="10">
     <path class="cls-2"
       d="M683.56,431.12V645.88H216.44V438.59c0-105.59,105.87-191,236.7-191h-6.28c130.83,0,236.7,85.44,236.7,191" />
