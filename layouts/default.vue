@@ -3,8 +3,8 @@ import type { HeaderItem } from '~/types'
 
 const items: HeaderItem[] = [
   { label: 'Начало', to: '/' },
-  { label: 'За нас', to: '/about' },
   { label: 'Блог', to: '/blog' },
+  { label: 'За нас', to: '/about' },
   { label: 'Контакти', to: '/contacts' },
 ]
 </script>
