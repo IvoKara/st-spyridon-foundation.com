@@ -34,7 +34,8 @@ export default defineConfig({
   theme: {
     colors: {
       antique: '#ffe8cc',
-      brick: '#3e2723',
+      brown: '#3e2723',
+      brick: '#944F34',
     },
     fontFamily: {
       cyrillic: 'Monomachus',

@@ -4,10 +4,10 @@ import { bank, bic, blessing, iban } from '~/constants'
 
 <template>
   <div flex flex-col items-center font-cyrillic>
-    <h1 text="3xl md:4xl" font-bold>
+    <H1>
       Фондация <br>
       "Св. Спиридон <br md:hidden> Тримитунтски Чудотворец"
-    </h1>
+    </H1>
 
     <h3
       mt-4 max-w-50ch
@@ -27,7 +27,7 @@ import { bank, bic, blessing, iban } from '~/constants'
 
     <img
       src="/st_spyridon_ikon.jpg"
-      mt-10 max-w-120 rounded-img
+      rounded-img mt-10 max-w-120
       alt="Икона на св. Спиридон"
     >
   </div>
