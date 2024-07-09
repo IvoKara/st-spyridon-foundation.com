@@ -14,7 +14,7 @@
         :title="article.title"
         :image="article.image"
         :description="article.description"
-        :to="article._path"
+        :to="article.to"
       />
     </div>
   </ContentList>
