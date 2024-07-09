@@ -3,12 +3,21 @@
 </script>
 
 <template>
-  <H1>Блог</H1>
-  <ul>
-    <li>
-      Blog Post
-    </li>
-  </ul>
+  <H1 mb-12>
+    Блог
+  </H1>
+
+  <ContentList v-slot="{ list }" path="/blog">
+    <div md:cols-2 lg:cols-3 grid mx-auto max-w-110 place-items-center gap-6 lg:max-w-350 md:max-w-200>
+      <BlogCard
+        v-for="article in list" :key="article._path"
+        :title="article.title"
+        :image="article.image"
+        :description="article.description"
+        :to="article._path"
+      />
+    </div>
+  </ContentList>
 </template>
 
 <style>
