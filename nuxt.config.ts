@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     '@vite-pwa/nuxt',
     // '@nuxtjs/fontaine',
     '@nuxt/content',
+    '@nuxt/image',
   ],
 
   content,
@@ -37,11 +38,11 @@ export default defineNuxtConfig({
         target: 'esnext',
       },
     },
-    // prerender: {
+    prerender: {
     //   crawlLinks: false,
-    //   routes: ['/'],
+      routes: ['/sitemap.xml'],
     //   ignore: ['/hi'],
-    // },
+    },
   },
 
   app: {
@@ -69,4 +70,6 @@ export default defineNuxtConfig({
       enabled: true,
     },
   },
+
+  compatibilityDate: '2024-07-09',
 })
