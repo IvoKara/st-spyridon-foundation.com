@@ -1,7 +1,7 @@
 <script setup lang="ts" generic="Item extends HeaderItem">
 import type { HeaderItem } from '~/types'
 
-const props = defineProps<{
+defineProps<{
   items: Item[]
 }>()
 const isOpen = ref(false)
@@ -46,7 +46,7 @@ const isOpen = ref(false)
       class="hover:*:text-brick *:transition-colors-300"
     >
       <li v-for="item in items" :key="item.label">
-        <NuxtLink :to="item.to">
+        <NuxtLink :to="item.to" @click="isOpen = false">
           {{ item.label }}
         </NuxtLink>
       </li>
