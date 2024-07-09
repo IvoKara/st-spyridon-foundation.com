@@ -12,7 +12,7 @@ import extractorMdc from '@unocss/extractor-mdc'
 
 export default defineConfig({
   shortcuts: [
-    { 'rounded-img': 'max-w-120 mx-auto w-full rounded-4 drop-shadow-(lg color-black/25)' },
+    { 'rounded-img': 'mx-auto w-full rounded-2 drop-shadow-(lg color-black/25)' },
   ],
   presets: [
     presetUno(),
