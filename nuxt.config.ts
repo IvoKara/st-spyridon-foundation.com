@@ -42,7 +42,7 @@ export default defineNuxtConfig({
     },
     prerender: {
     //   crawlLinks: false,
-      routes: ['/sitemap.xml', '/', '/blog', '/blog/idea'],
+      routes: ['/sitemap.xml', '/', '/blog', '/blog/idea', '/blog/slipper'],
       autoSubfolderIndex: false,
     //   ignore: ['/hi'],
     },
