@@ -6,12 +6,12 @@
           <h1 mb-10 font-cyrillic>
             {{ doc.title }}
           </h1>
-          <ContentRenderer class="text-(start lg) font-alegreya" :value="doc" />
+          <ContentRendererMarkdown class="text-(start lg) font-alegreya" :value="doc" />
         </article>
       </template>
 
       <template #not-found>
-        <h1 text="3xl">
+        <h1 text="3xl" font-alegreya>
           Страницата не е намерена
         </h1>
       </template>

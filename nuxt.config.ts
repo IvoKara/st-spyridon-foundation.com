@@ -16,10 +16,10 @@ export default defineNuxtConfig({
   content,
 
   experimental: {
+    sharedPrerenderData: true,
     // when using generate, payload js assets included in sw precache manifest
     // but missing on offline, disabling extraction it until fixed
     payloadExtraction: false,
-    inlineSSRStyles: false,
     renderJsonPayloads: true,
   },
 
@@ -33,6 +33,7 @@ export default defineNuxtConfig({
   },
 
   nitro: {
+    preset: 'cloudflare-pages-static',
     esbuild: {
       options: {
         target: 'esnext',
@@ -40,7 +41,8 @@ export default defineNuxtConfig({
     },
     prerender: {
     //   crawlLinks: false,
-      routes: ['/sitemap.xml'],
+      routes: ['/sitemap.xml', '/', '/blog', '/blog/idea'],
+      autoSubfolderIndex: false,
     //   ignore: ['/hi'],
     },
   },
