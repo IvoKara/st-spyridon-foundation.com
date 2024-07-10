@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     '@vite-pwa/nuxt',
     // '@nuxtjs/fontaine',
     '@nuxt/content',
+    "@nuxthub/core"
   ],
 
   content,
