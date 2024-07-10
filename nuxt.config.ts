@@ -11,7 +11,7 @@ export default defineNuxtConfig({
     // '@nuxtjs/fontaine',
     '@nuxt/content',
     '@nuxt/image',
-    "@nuxthub/core"
+    // "@nuxthub/core"
   ],
 
   content,
