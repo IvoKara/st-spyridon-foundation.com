@@ -10,16 +10,17 @@ export default defineNuxtConfig({
     '@vite-pwa/nuxt',
     // '@nuxtjs/fontaine',
     '@nuxt/content',
+    '@nuxt/image',
     "@nuxthub/core"
   ],
 
   content,
 
   experimental: {
+    sharedPrerenderData: true,
     // when using generate, payload js assets included in sw precache manifest
     // but missing on offline, disabling extraction it until fixed
     payloadExtraction: false,
-    inlineSSRStyles: false,
     renderJsonPayloads: true,
   },
 
@@ -33,16 +34,18 @@ export default defineNuxtConfig({
   },
 
   nitro: {
+    preset: 'cloudflare-pages-static',
     esbuild: {
       options: {
         target: 'esnext',
       },
     },
-    // prerender: {
+    prerender: {
     //   crawlLinks: false,
-    //   routes: ['/'],
+      routes: ['/sitemap.xml', '/', '/blog', '/blog/idea'],
+      autoSubfolderIndex: false,
     //   ignore: ['/hi'],
-    // },
+    },
   },
 
   app: {
@@ -70,4 +73,6 @@ export default defineNuxtConfig({
       enabled: true,
     },
   },
+
+  compatibilityDate: '2024-07-09',
 })
